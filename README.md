@@ -174,10 +174,6 @@ query = "What are the top 10 OWASP vulnerabilities?"
 - `faiss-cpu`: Vector similarity search
 - `pypdf`: PDF processing
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Contributing
 
 1. Fork the repository
