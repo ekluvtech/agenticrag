@@ -97,8 +97,8 @@ The system will:
 | `LLM_MODEL` | LLM model name | `llama3.2` |
 | `EMBED_MODEL` | Embedding model name | `mxbai-embed-large:latest` |
 | `FAISS_INDEX_NAME` | FAISS index name | `faiss_idx` |
-| `FOLDER_PATH` | Path to documents folder | `/Users/srikanth/Documents/ekluv2/faissdata/data` |
-| `INDEX_STORAGE_PATH` | Path to store FAISS index | `/Users/srikanth/Documents/ekluv2/faissdata/index` |
+| `FOLDER_PATH` | Path to documents folder | `<<ROOT_DIRECOTRY>>/faissdata/data` |
+| `INDEX_STORAGE_PATH` | Path to store FAISS index | `<<ROOT_DIRECOTRY>>/faissdata/index` |
 
 ### Model Requirements
 
