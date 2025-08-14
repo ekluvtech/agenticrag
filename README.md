@@ -22,7 +22,7 @@ A powerful Retrieval-Augmented Generation (RAG) system that combines document kn
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/ekluvtech/agenticrag.git
    cd agenticrag
    ```
 
