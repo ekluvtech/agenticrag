@@ -25,13 +25,23 @@ A powerful Retrieval-Augmented Generation (RAG) system that combines document kn
    git clone https://github.com/ekluvtech/agenticrag.git
    cd agenticrag
    ```
+2. **Change the configuration params in config.py**
 
-2. **Install Python dependencies**
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `OLLAMA_URL` | Ollama server URL | `http://localhost:11434` |
+| `LLM_MODEL` | LLM model name | `llama3.2` |
+| `EMBED_MODEL` | Embedding model name | `mxbai-embed-large:latest` |
+| `FAISS_INDEX_NAME` | FAISS index name | `faiss_idx` |
+| `FOLDER_PATH` | Path to documents folder | `<<PATH_TO_DIRECOTRY>>/faissdata/data` |
+| `INDEX_STORAGE_PATH` | Path to store FAISS index | `<<PATH_TO_DIRECOTRY>>/faissdata/index` |
+
+3. **Install Python dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Install and setup Ollama**
+4. **Install and setup Ollama**
    ```bash
    # Install Ollama (follow instructions at https://ollama.ai/)
    
@@ -71,19 +81,6 @@ The system will:
 - Initialize the agent with document retrieval and web search tools
 - Process queries using intelligent tool selection
 - Provide answers with source attribution
-
-## Configuration
-
-### Config params
-
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `OLLAMA_URL` | Ollama server URL | `http://localhost:11434` |
-| `LLM_MODEL` | LLM model name | `llama3.2` |
-| `EMBED_MODEL` | Embedding model name | `mxbai-embed-large:latest` |
-| `FAISS_INDEX_NAME` | FAISS index name | `faiss_idx` |
-| `FOLDER_PATH` | Path to documents folder | `<<PATH_TO_DIRECOTRY>>/faissdata/data` |
-| `INDEX_STORAGE_PATH` | Path to store FAISS index | `<<PATH_TO_DIRECOTRY>>/faissdata/index` |
 
 ### Model Requirements
 
