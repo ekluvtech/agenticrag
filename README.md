@@ -40,21 +40,6 @@ A powerful Retrieval-Augmented Generation (RAG) system that combines document kn
    ollama pull mxbai-embed-large:latest
    ```
 
-4. **Configure environment variables**
-   
-   Create a `.env` file in the project root or set environment variables:
-   ```bash
-   # Ollama Configuration
-   OLLAMA_URL=http://localhost:11434
-   LLM_MODEL=llama3.2
-   EMBED_MODEL=mxbai-embed-large:latest
-   
-   # Vector Store Configuration
-   FAISS_INDEX_NAME=faiss_idx
-   FOLDER_PATH=/path/to/your/documents
-   INDEX_STORAGE_PATH=/path/to/store/faiss/index
-   ```
-
 ## Usage
 
 ### 1. Building the Knowledge Base
@@ -89,7 +74,7 @@ The system will:
 
 ## Configuration
 
-### Environment Variables
+### Config params
 
 | Variable | Description | Default |
 |----------|-------------|---------|
@@ -97,8 +82,8 @@ The system will:
 | `LLM_MODEL` | LLM model name | `llama3.2` |
 | `EMBED_MODEL` | Embedding model name | `mxbai-embed-large:latest` |
 | `FAISS_INDEX_NAME` | FAISS index name | `faiss_idx` |
-| `FOLDER_PATH` | Path to documents folder | `<<ROOT_DIRECOTRY>>/faissdata/data` |
-| `INDEX_STORAGE_PATH` | Path to store FAISS index | `<<ROOT_DIRECOTRY>>/faissdata/index` |
+| `FOLDER_PATH` | Path to documents folder | `<<PATH_TO_DIRECOTRY>>/faissdata/data` |
+| `INDEX_STORAGE_PATH` | Path to store FAISS index | `<<PATH_TO_DIRECOTRY>>/faissdata/index` |
 
 ### Model Requirements
 
